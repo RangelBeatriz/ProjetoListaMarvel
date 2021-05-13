@@ -14,6 +14,7 @@
 		CDC2B3C2264C84A500D07E22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC2B3C1264C84A500D07E22 /* Assets.xcassets */; };
 		CDC2B3C5264C84A500D07E22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC2B3C3264C84A500D07E22 /* LaunchScreen.storyboard */; };
 		CDC2B3CF264C85E000D07E22 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CDC2B3CE264C85E000D07E22 /* Alamofire */; };
+		CDE9CDBA264DB0360033722A /* SwiftAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9CDB9264DB0360033722A /* SwiftAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		CDC2B3C1264C84A500D07E22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDC2B3C4264C84A500D07E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC2B3C6264C84A500D07E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE9CDB9264DB0360033722A /* SwiftAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		CDC2B3B7264C84A400D07E22 /* MarvelAPI */ = {
 			isa = PBXGroup;
 			children = (
+				CDE9CDBC264DB0C40033722A /* NetworkService */,
 				CDC2B3B8264C84A400D07E22 /* AppDelegate.swift */,
 				CDC2B3BA264C84A400D07E22 /* SceneDelegate.swift */,
 				CDC2B3BC264C84A400D07E22 /* ViewController.swift */,
@@ -67,6 +70,14 @@
 				CDC2B3C6264C84A500D07E22 /* Info.plist */,
 			);
 			path = MarvelAPI;
+			sourceTree = "<group>";
+		};
+		CDE9CDBC264DB0C40033722A /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				CDE9CDB9264DB0360033722A /* SwiftAPI.swift */,
+			);
+			name = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			files = (
 				CDC2B3BD264C84A400D07E22 /* ViewController.swift in Sources */,
 				CDC2B3B9264C84A400D07E22 /* AppDelegate.swift in Sources */,
+				CDE9CDBA264DB0360033722A /* SwiftAPI.swift in Sources */,
 				CDC2B3BB264C84A400D07E22 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
