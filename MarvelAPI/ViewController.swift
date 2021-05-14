@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import CryptoKit
 
 
 
 class ViewController: UIViewController {
+    
+    var apiRequest = SwiftAPI()
 
     override func viewDidLoad() {
         super.viewDidLoad()
