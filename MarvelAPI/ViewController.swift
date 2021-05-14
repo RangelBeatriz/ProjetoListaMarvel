@@ -12,10 +12,9 @@ import CryptoKit
 
 class ViewController: UIViewController {
     
-<<<<<<< HEAD
-=======
 
->>>>>>> develop
+
+
     override func viewDidLoad() {
         var requisitoApi = SwiftAPI()
         var apiMarvel = SwiftAPI()
