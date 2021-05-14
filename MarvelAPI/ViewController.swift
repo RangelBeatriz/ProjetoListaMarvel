@@ -12,11 +12,12 @@ import CryptoKit
 
 class ViewController: UIViewController {
     
-    var apiRequest = SwiftAPI()
+    var apiMarvel = SwiftAPI()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        apiMarvel.apiRequest()
     }
 
 
