@@ -14,11 +14,11 @@ class ViewController: UIViewController {
     
 <<<<<<< HEAD
 =======
-    var apiMarvel = SwiftAPI()
 
 >>>>>>> develop
     override func viewDidLoad() {
         var requisitoApi = SwiftAPI()
+        var apiMarvel = SwiftAPI()
         super.viewDidLoad()
         requisitoApi.apiRequest()
         // Do any additional setup after loading the view.
