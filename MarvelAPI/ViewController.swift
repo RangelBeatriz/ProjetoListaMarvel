@@ -16,10 +16,8 @@ class ViewController: UIViewController {
 
 
     override func viewDidLoad() {
-        var requisitoApi = SwiftAPI()
-        var apiMarvel = SwiftAPI()
+        let apiMarvel = SwiftAPI()
         super.viewDidLoad()
-        requisitoApi.apiRequest()
         // Do any additional setup after loading the view.
         apiMarvel.apiRequest()
     }
