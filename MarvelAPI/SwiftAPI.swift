@@ -28,6 +28,21 @@ class SwiftAPI {
             print(data)
         }
     }
+    
+    func marvelApiCall () {
+        guard let baseUrl = URL (string:
+            "http://gateway.marvel.com/v1/public/characters?ts=\(ts)&apikey=\(publicKey)&hash=\(getMD5())") else {return}
+        AF.request(baseUrl).responseJSON {
+            (responseData) in guard let data = responseData.data else {return}
+            do {
+                let chars = try JSONDecoder().decode(ReturnApi.self, from: data)
+                print("Characters: \(chars)")
+            } catch {
+                print("error \(error)")
+            }
+        }
+    }
+    
     //MARK: - Funcao para conseguir a hash
     private func getMD5() -> String {
         let apiData = ts + privateKey + publicKey
@@ -35,6 +50,9 @@ class SwiftAPI {
         let apiHash = Insecure.MD5.hash(data: data)
         return apiHash.map {String(format: "%02hhx", $0)}.joined()
     }
+    
+    
+    
     
     //MARK: - Funcao para pegar a imagem
     

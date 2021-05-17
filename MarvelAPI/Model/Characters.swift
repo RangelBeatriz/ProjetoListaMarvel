@@ -7,40 +7,34 @@
 
 import Foundation
 
-struct MarvelAPIData: Codable {
-    var data: CharacterData
+struct ReturnApi: Codable {
+    let code: Int
+    let data: DataClass
+    let etag, status: String
 }
 
-
-struct CharacterData: Codable {
-    let results: [Character]
+// MARK: - DataClass
+struct DataClass: Codable {
+    let offset, limit, total, count: Int
+    let results: [Personagem]
+}
+// MARK: - Result
+struct Personagem: Codable {
+   let id: Int
+   let name, description: String
+   //let thumbnail: Thumbnail
+   
+   enum CodingKeys: String, CodingKey{
+       case id
+       case name, description
+}
 }
 
-
-struct Character: Codable {
-    let id: Int
-    let name: String
-    let description: String
-    let thumbnail: Thumbnail
-
-}
-
-
-struct Thumbnail: Codable {
-    let path: String
-    let ext: String
-
-
-    var url: String{
-        return path + "." + ext
+//MARK - Thumbnail
+   struct Thumbnail: Codable {
+        let path: String
+        let xtension = "extension"
+        enum CodingKeys: String, CodingKey{
+            case xtension, path
+        }
     }
-
-}
-
-enum CodingKeys: String, CodingKey {
-    case path
-    case ext = "extension"
-}
-
-
-
