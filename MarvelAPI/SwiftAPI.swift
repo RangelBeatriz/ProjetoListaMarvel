@@ -21,14 +21,14 @@ class SwiftAPI {
     
     //MARK: - Funcao para pegar api
     
-    public func apiRequest() {
+   public func apiRequest() {
         let parameters = ["ts": ts, "hash": self.getMD5(), "apikey" : publicKey]
         
         let request = AF.request(baseURL, parameters: parameters)
         
-        request.responseJSON { (data) in
+        /*request.responseJSON { (data) in
             print(data)
-        }
+        }*/
             
     }
     

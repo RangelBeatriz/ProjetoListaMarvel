@@ -33,6 +33,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         /*nameLbl.text = hero?.name
         lblTwo.text = hero?.description*/
+        
+        
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -53,13 +55,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     //MARK: - Segway
-    /*func tableView(_ tablewView: UITableView, didSelectRowat indexPath: IndexPath) {
+    func tableView(_ tablewView: UITableView, didSelectRowat indexPath: IndexPath) {
         performSegue(withIdentifier: "showDetails", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination =
-    }*/
+        if let destination = segue.destination as? ViewController {
+            destination.hero = listaChars[tableView.indexPathForSelectedRow!.row]
+        }
+    }
 
 }
 
