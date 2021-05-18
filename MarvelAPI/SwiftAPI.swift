@@ -21,7 +21,7 @@ class SwiftAPI {
     
     //MARK: - Funcao para pegar api
     
-    /*public func apiRequest() {
+    public func apiRequest() {
         let parameters = ["ts": ts, "hash": self.getMD5(), "apikey" : publicKey]
         
         let request = AF.request(baseURL, parameters: parameters)
@@ -30,7 +30,7 @@ class SwiftAPI {
             print(data)
         }
             
-    }*/
+    }
     
     func marvelApiCall () {
         guard let baseUrl = URL (string:

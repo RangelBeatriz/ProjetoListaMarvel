@@ -29,8 +29,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLbl.text = hero?.name
-        lblTwo.text = hero?.description
+        chamarApi.marvelApiCall()
+        
+        /*nameLbl.text = hero?.name
+        lblTwo.text = hero?.description*/
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -51,9 +53,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     //MARK: - Segway
-    func tableView(_tablewView: UITableView, didSelectRowat indexPath: IndexPath) {
-        
+    /*func tableView(_ tablewView: UITableView, didSelectRowat indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetails", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination =
+    }*/
 
 }
 
