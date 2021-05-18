@@ -72,9 +72,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="8i6-WB-edm"/>
                     <connections>
-                        <outlet property="heroImageView" destination="CQy-CY-pR5" id="gqD-rZ-YM5"/>
-                        <outlet property="lblTwo" destination="OYt-zG-OhH" id="ebS-eD-xQV"/>
-                        <outlet property="nameLbl" destination="760-vC-NZA" id="Iiw-h3-GrF"/>
+                        <outlet property="imageView" destination="CQy-CY-pR5" id="4kP-Yp-elG"/>
+                        <outlet property="lblTwo" destination="OYt-zG-OhH" id="4Ln-Xz-zf1"/>
+                        <outlet property="nameLbl" destination="760-vC-NZA" id="z81-AA-aOr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAp-qd-PIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

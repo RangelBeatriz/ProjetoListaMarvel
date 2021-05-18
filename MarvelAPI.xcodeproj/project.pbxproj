@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E80D99D5379670412425A79 /* Pods_MarvelAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7D307237D7EE2042D5C871 /* Pods_MarvelAPI.framework */; };
 		CD4A62D62650342A002AE74E /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A62D52650342A002AE74E /* Characters.swift */; };
+		CD78C65E265348E20028851C /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD78C65D265348E20028851C /* HeroViewController.swift */; };
 		CDC2B3B9264C84A400D07E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2B3B8264C84A400D07E22 /* AppDelegate.swift */; };
 		CDC2B3BB264C84A400D07E22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2B3BA264C84A400D07E22 /* SceneDelegate.swift */; };
 		CDC2B3BD264C84A400D07E22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2B3BC264C84A400D07E22 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		78DDD04C5B467DA819271B5C /* Pods-MarvelAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelAPI.debug.xcconfig"; path = "Target Support Files/Pods-MarvelAPI/Pods-MarvelAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		ABD33A7F1E00907C8F81FF30 /* Pods-MarvelAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelAPI.release.xcconfig"; path = "Target Support Files/Pods-MarvelAPI/Pods-MarvelAPI.release.xcconfig"; sourceTree = "<group>"; };
 		CD4A62D52650342A002AE74E /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		CD78C65D265348E20028851C /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 		CDC2B3B5264C84A400D07E22 /* MarvelAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC2B3B8264C84A400D07E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC2B3BA264C84A400D07E22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CDC2B3BC264C84A400D07E22 /* ViewController.swift */,
+				CD78C65D265348E20028851C /* HeroViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				CDC2B3B9264C84A400D07E22 /* AppDelegate.swift in Sources */,
 				CDE9CDBA264DB0360033722A /* SwiftAPI.swift in Sources */,
 				CDC2B3BB264C84A400D07E22 /* SceneDelegate.swift in Sources */,
+				CD78C65E265348E20028851C /* HeroViewController.swift in Sources */,
 				CD4A62D62650342A002AE74E /* Characters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

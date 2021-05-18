@@ -17,9 +17,11 @@ class SwiftAPI {
     let publicKey = "ee6645130f54ce96d6d993660fa2be92"
     let ts = String(Date().timeIntervalSince1970)
     
+
+    
     //MARK: - Funcao para pegar api
     
-    public func apiRequest() {
+    /*public func apiRequest() {
         let parameters = ["ts": ts, "hash": self.getMD5(), "apikey" : publicKey]
         
         let request = AF.request(baseURL, parameters: parameters)
@@ -27,7 +29,8 @@ class SwiftAPI {
         request.responseJSON { (data) in
             print(data)
         }
-    }
+            
+    }*/
     
     func marvelApiCall () {
         guard let baseUrl = URL (string:
@@ -42,6 +45,7 @@ class SwiftAPI {
             }
         }
     }
+    
     
     //MARK: - Funcao para conseguir a hash
     private func getMD5() -> String {
@@ -71,4 +75,6 @@ class SwiftAPI {
     typealias APIResultCall = (Data?) -> ()
     typealias APIResultImage = (Data?) -> ()
     typealias APIResultParse = ([Character]) -> ()
+
+
 
