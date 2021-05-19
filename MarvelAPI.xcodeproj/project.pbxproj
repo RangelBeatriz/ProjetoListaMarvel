@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9E80D99D5379670412425A79 /* Pods_MarvelAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7D307237D7EE2042D5C871 /* Pods_MarvelAPI.framework */; };
+		CBA20A8A2655D2DA006A5F02 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA20A892655D2DA006A5F02 /* TableViewController.swift */; };
 		CDC2B3B9264C84A400D07E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2B3B8264C84A400D07E22 /* AppDelegate.swift */; };
 		CDC2B3BB264C84A400D07E22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2B3BA264C84A400D07E22 /* SceneDelegate.swift */; };
 		CDC2B3BD264C84A400D07E22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2B3BC264C84A400D07E22 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		2D7D307237D7EE2042D5C871 /* Pods_MarvelAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DDD04C5B467DA819271B5C /* Pods-MarvelAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelAPI.debug.xcconfig"; path = "Target Support Files/Pods-MarvelAPI/Pods-MarvelAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		ABD33A7F1E00907C8F81FF30 /* Pods-MarvelAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelAPI.release.xcconfig"; path = "Target Support Files/Pods-MarvelAPI/Pods-MarvelAPI.release.xcconfig"; sourceTree = "<group>"; };
+		CBA20A892655D2DA006A5F02 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CDC2B3B5264C84A400D07E22 /* MarvelAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC2B3B8264C84A400D07E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC2B3BA264C84A400D07E22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		F40E1288265517CD008A4A30 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CBA20A892655D2DA006A5F02 /* TableViewController.swift */,
 				CDC2B3BC264C84A400D07E22 /* ViewController.swift */,
 			);
 			name = Controller;
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC2B3BD264C84A400D07E22 /* ViewController.swift in Sources */,
+				CBA20A8A2655D2DA006A5F02 /* TableViewController.swift in Sources */,
 				CDC2B3B9264C84A400D07E22 /* AppDelegate.swift in Sources */,
 				F40E128B26551813008A4A30 /* Character.swift in Sources */,
 				CDE9CDBA264DB0360033722A /* SwiftAPI.swift in Sources */,
