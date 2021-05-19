@@ -12,6 +12,12 @@ import CryptoKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var characterImage: UIImageView!
+    @IBOutlet weak var characterName: UILabel!
+    @IBOutlet weak var characterDescription: UILabel!
+    
+    
+    
     var apiMarvel = SwiftAPI()
 
     override func viewDidLoad() {
