@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../Desktop/ProjetoListaMarvel1/MarvelAPI/DetailViewController.swift">
-   </FileRef>
-   <FileRef
       location = "group:MarvelAPI.xcodeproj">
    </FileRef>
    <FileRef

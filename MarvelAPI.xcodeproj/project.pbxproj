@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BB5933A26580B7A006A5B55 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB5933926580B7A006A5B55 /* DetailViewController.swift */; };
-		2BB5934E26580C7A006A5B55 /* Main1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB5934C26580C7A006A5B55 /* Main1.storyboard */; };
-		2BB5935926580E23006A5B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB5935726580E23006A5B55 /* Main.storyboard */; };
+		2B9DE68A265830A900B1D1DD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DE689265830A900B1D1DD /* DetailViewController.swift */; };
+		2BB5936A2658255B006A5B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB5934C26580C7A006A5B55 /* Main.storyboard */; };
+		2BB5936C2658258B006A5B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB5935726580E23006A5B55 /* Main.storyboard */; };
 		9E80D99D5379670412425A79 /* Pods_MarvelAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7D307237D7EE2042D5C871 /* Pods_MarvelAPI.framework */; };
 		CBA20A8A2655D2DA006A5F02 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA20A892655D2DA006A5F02 /* TableViewController.swift */; };
 		CDC2B3B9264C84A400D07E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2B3B8264C84A400D07E22 /* AppDelegate.swift */; };
@@ -23,9 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B9DE689265830A900B1D1DD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2BB5933926580B7A006A5B55 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../../../Desktop/ProjetoListaMarvel1/MarvelAPI/DetailViewController.swift; sourceTree = "<group>"; };
-		2BB5934D26580C7A006A5B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main1.storyboard; sourceTree = "<group>"; };
-		2BB5935826580E23006A5B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../Desktop/ProjetoListaMarvel/MarvelAPI/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BB5934D26580C7A006A5B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BB5935826580E23006A5B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = ../../../Desktop/ProjetoListaMarvel/MarvelAPI/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D7D307237D7EE2042D5C871 /* Pods_MarvelAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DDD04C5B467DA819271B5C /* Pods-MarvelAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelAPI.debug.xcconfig"; path = "Target Support Files/Pods-MarvelAPI/Pods-MarvelAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		ABD33A7F1E00907C8F81FF30 /* Pods-MarvelAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelAPI.release.xcconfig"; path = "Target Support Files/Pods-MarvelAPI/Pods-MarvelAPI.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 				F40E1287265517C5008A4A30 /* View */,
 				CDE9CDBC264DB0C40033722A /* NetworkService */,
 				CDC2B3B8264C84A400D07E22 /* AppDelegate.swift */,
+				2B9DE689265830A900B1D1DD /* DetailViewController.swift */,
 				CDC2B3BA264C84A400D07E22 /* SceneDelegate.swift */,
 				CDC2B3C1264C84A500D07E22 /* Assets.xcassets */,
 				CDC2B3C6264C84A500D07E22 /* Info.plist */,
@@ -116,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				CDC2B3C3264C84A500D07E22 /* LaunchScreen.storyboard */,
+				2BB5934C26580C7A006A5B55 /* Main.storyboard */,
 				2BB5935726580E23006A5B55 /* Main.storyboard */,
-				2BB5934C26580C7A006A5B55 /* Main1.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -204,10 +206,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BB5934E26580C7A006A5B55 /* Main1.storyboard in Resources */,
+				2BB5936A2658255B006A5B55 /* Main.storyboard in Resources */,
+				2BB5936C2658258B006A5B55 /* Main.storyboard in Resources */,
 				CDC2B3C5264C84A500D07E22 /* LaunchScreen.storyboard in Resources */,
 				CDC2B3C2264C84A500D07E22 /* Assets.xcassets in Resources */,
-				2BB5935926580E23006A5B55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,25 +245,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B9DE68A265830A900B1D1DD /* DetailViewController.swift in Sources */,
 				CDC2B3BD264C84A400D07E22 /* ViewController.swift in Sources */,
 				CBA20A8A2655D2DA006A5F02 /* TableViewController.swift in Sources */,
 				CDC2B3B9264C84A400D07E22 /* AppDelegate.swift in Sources */,
 				F40E128B26551813008A4A30 /* Character.swift in Sources */,
 				CDE9CDBA264DB0360033722A /* SwiftAPI.swift in Sources */,
 				CDC2B3BB264C84A400D07E22 /* SceneDelegate.swift in Sources */,
-				2BB5933A26580B7A006A5B55 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2BB5934C26580C7A006A5B55 /* Main1.storyboard */ = {
+		2BB5934C26580C7A006A5B55 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2BB5934D26580C7A006A5B55 /* Base */,
 			);
-			name = Main1.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		2BB5935726580E23006A5B55 /* Main.storyboard */ = {
