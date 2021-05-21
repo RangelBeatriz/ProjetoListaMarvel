@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BB593282657F7DF006A5B55 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB593272657F7DF006A5B55 /* DetailViewController.swift */; };
+		2BB5932C2657F8A2006A5B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB5932A2657F8A2006A5B55 /* Main.storyboard */; };
 		9E80D99D5379670412425A79 /* Pods_MarvelAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7D307237D7EE2042D5C871 /* Pods_MarvelAPI.framework */; };
 		CBA20A8A2655D2DA006A5F02 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA20A892655D2DA006A5F02 /* TableViewController.swift */; };
 		CDC2B3B9264C84A400D07E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2B3B8264C84A400D07E22 /* AppDelegate.swift */; };
 		CDC2B3BB264C84A400D07E22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2B3BA264C84A400D07E22 /* SceneDelegate.swift */; };
 		CDC2B3BD264C84A400D07E22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2B3BC264C84A400D07E22 /* ViewController.swift */; };
-		CDC2B3C0264C84A400D07E22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC2B3BE264C84A400D07E22 /* Main.storyboard */; };
 		CDC2B3C2264C84A500D07E22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC2B3C1264C84A500D07E22 /* Assets.xcassets */; };
 		CDC2B3C5264C84A500D07E22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC2B3C3264C84A500D07E22 /* LaunchScreen.storyboard */; };
 		CDC2B3CF264C85E000D07E22 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CDC2B3CE264C85E000D07E22 /* Alamofire */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BB593272657F7DF006A5B55 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../../ProjetoListaMarvel1/MarvelAPI/DetailViewController.swift; sourceTree = "<group>"; };
+		2BB5932B2657F8A2006A5B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../ProjetoListaMarvel1/MarvelAPI/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D7D307237D7EE2042D5C871 /* Pods_MarvelAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DDD04C5B467DA819271B5C /* Pods-MarvelAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelAPI.debug.xcconfig"; path = "Target Support Files/Pods-MarvelAPI/Pods-MarvelAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		ABD33A7F1E00907C8F81FF30 /* Pods-MarvelAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelAPI.release.xcconfig"; path = "Target Support Files/Pods-MarvelAPI/Pods-MarvelAPI.release.xcconfig"; sourceTree = "<group>"; };
@@ -29,7 +32,6 @@
 		CDC2B3B8264C84A400D07E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC2B3BA264C84A400D07E22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CDC2B3BC264C84A400D07E22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CDC2B3BF264C84A400D07E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDC2B3C1264C84A500D07E22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDC2B3C4264C84A500D07E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC2B3C6264C84A500D07E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,7 +113,7 @@
 		F40E1287265517C5008A4A30 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CDC2B3BE264C84A400D07E22 /* Main.storyboard */,
+				2BB5932A2657F8A2006A5B55 /* Main.storyboard */,
 				CDC2B3C3264C84A500D07E22 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -122,6 +124,7 @@
 			children = (
 				CBA20A892655D2DA006A5F02 /* TableViewController.swift */,
 				CDC2B3BC264C84A400D07E22 /* ViewController.swift */,
+				2BB593272657F7DF006A5B55 /* DetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -200,7 +203,7 @@
 			files = (
 				CDC2B3C5264C84A500D07E22 /* LaunchScreen.storyboard in Resources */,
 				CDC2B3C2264C84A500D07E22 /* Assets.xcassets in Resources */,
-				CDC2B3C0264C84A400D07E22 /* Main.storyboard in Resources */,
+				2BB5932C2657F8A2006A5B55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,16 +245,17 @@
 				F40E128B26551813008A4A30 /* Character.swift in Sources */,
 				CDE9CDBA264DB0360033722A /* SwiftAPI.swift in Sources */,
 				CDC2B3BB264C84A400D07E22 /* SceneDelegate.swift in Sources */,
+				2BB593282657F7DF006A5B55 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CDC2B3BE264C84A400D07E22 /* Main.storyboard */ = {
+		2BB5932A2657F8A2006A5B55 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CDC2B3BF264C84A400D07E22 /* Base */,
+				2BB5932B2657F8A2006A5B55 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

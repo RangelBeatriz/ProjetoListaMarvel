@@ -23,7 +23,7 @@ class SwiftAPI {
     var callBack:charactersCallBack?
     
     public func apiRequest() {
-            let parameters = ["ts": ts, "hash": self.getMD5(), "apikey" : publicKey]
+        let parameters = ["ts": ts, "hash": self.getMD5(), "apikey" : publicKey, "limit": "100"]
             
             let request = AF.request(baseURL, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil)
             

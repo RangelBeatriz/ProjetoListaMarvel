@@ -6,77 +6,62 @@
 //
 
 import UIKit
+import CryptoKit
 
-class TableViewController: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    // MARK: - Table view data source
-
-    /* override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-*/
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
+class ViewController: UIViewController, UITableViewDelegate {
+    @IBOutlet weak var charView: UITableView!
+    var characs = [Character]()
+    var apiMarvel = SwiftAPI()
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
-        // cell.textLabel?.text = variavel[indexPath.row]
-        return cell
+    override func viewDidLoad() {
+    
+        super.viewDidLoad()
+        charView.delegate = self
+        charView.dataSource = self
+        
+        
+        
+        apiMarvel.apiRequest()
+        apiMarvel.completionHandler { (characters, status, message) in
+            if status{
+                guard let _characters = characters else {return}
+                self.characs = _characters
+                self.charView.reloadData()
+                
+            }
+        }
     }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-// myIndex = indexPath.row
-        //performSegue(withIdentifier: "segue", sender: self)
-    }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-
+    
+    
 }
+    extension ViewController : UITableViewDataSource {
+        
+        
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return characs.count
+}
+                
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        if cell == nil{
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
+        }
+        let charac = characs[indexPath.row]
+        cell?.textLabel?.text = charac.name
+        return cell!
+    }
+        func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) { performSegue(withIdentifier: "showDetails", sender: self)
+            
+        }
+       
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let destination = segue.destination as? DetailViewController { destination.chars = characs[charView.indexPathForSelectedRow!.row]
+        }
+        
+
+        }
+        
+
+    }
