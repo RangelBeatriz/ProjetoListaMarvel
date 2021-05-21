@@ -10,6 +10,7 @@ import CryptoKit
 
 
 class ViewController: UIViewController, UITableViewDelegate {
+
     @IBOutlet weak var charView: UITableView!
     var characs = [Character]()
     var apiMarvel = SwiftAPI()
